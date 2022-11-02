@@ -1,0 +1,105 @@
+.container {
+  width: 1200px;
+  height: 800px;
+  display: grid;
+  gap: 10px;
+
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1.5fr 1fr 1.5fr;
+  grid-template-areas:
+    "it1 it1 it1 it2 it2 it2"
+    "it3 it3 it4 it4 it5 it5"
+    "it6 it6 it6 it7 it7 it7";
+}
+
+.container > div {
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  font-family: "WWFRegular", "Helvetica Neue", "Arial", sans-serif;
+}
+
+.grow {
+  font-size: 2.1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 2.1px;
+}
+
+.petit {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+  letter-spacing: 2.1px;
+}
+
+.item1 {
+    /* position: relative; */
+  grid-area: it1;
+  /* background: url(https://www.wwf.fr/sites/default/files/styles/default_small/public/2018-02/Recette460x287_TEST.jpg?h=8e8a29f5&itok=nKSZxW6L)
+    no-repeat; */
+  /* background-size:contain; */
+  /* background-position: center; */
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.img_2 {
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    /* z-index: 12; */
+}
+p {
+    /* color: blueviolet; */
+    position: absolute;
+    /* top: 0px;
+    left: 0px; */
+    
+}
+
+
+.item2 {
+  grid-area: it2;
+
+  /* background: url(https://www.wwf.fr/sites/default/files/styles/default_small/public/2017-09/232487.jpg?h=561fe1eb&itok=YA8MDc21)
+    no-repeat;
+  background-size: contain; */
+}
+
+.item3 {
+  grid-area: it3;
+  /* background: url(https://www.wwf.fr/sites/default/files/styles/default_small/public/2019-10/Medium_WW197940-min_dark.jpg?h=316e6540&itok=R3cia7m6)
+    no-repeat;
+  background-size: contain; */
+}
+
+.item4 {
+  grid-area: it4;
+  /* background: url(https://www.wwf.fr/sites/default/files/styles/default_small/public/2019-10/WW197963-min_dark.jpg?h=06ac0d8c&itok=C4wlwL4W)
+    no-repeat;
+  background-size: contain; */
+}
+.item5 {
+  grid-area: it5;
+  /* background: url(https://www.wwf.fr/sites/default/files/styles/default_small/public/2019-10/pexels-photo-1181271-min_dark.jpg?h=06f6671c&itok=4jIh4eCY)
+    no-repeat;
+  background-size: contain; */
+}
+.item6 {
+  grid-area: it6;
+  /* background: url(https://www.wwf.fr/sites/default/files/styles/default_small/public/2017-10/WWf%201705%20NeM_DR%2037.jpg?h=ac55c5bf&itok=64Wr9WJm)
+    no-repeat;
+  background-size: contain; */
+}
+.item7 {
+  grid-area: it7;
+  /* background: url(https://www.wwf.fr/sites/default/files/styles/default_small/public/2019-10/791172_1920_dark.jpg?h=e5aec6c8&itok=WJyk-9j3)
+    no-repeat;
+  background-size: contain; */
+}
